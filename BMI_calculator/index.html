@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+.second-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px 15px 5px;
+  background-color: #f0f0f0; /* Light background to see padding */
+  border: 1px solid #ccc;    /* Optional border */
+}
+
+
+    .center-box{
+height: 400px;
+width: 400px;
+background-color: bisque;
+    }
+.oneinput{
+height: 45px;
+width: 200px;
+border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+  <div class="center-box">
+<div class="second-body">
+    <h2>BMI Calculator :</h2>
+    <label>Weight:</label>
+    <input class="oneinput" 
+    placeholder="Enter the weight " 
+    type="number" value="0"
+     max="500" min="0"/>
+
+      <label style="font-size: 20px;">Height:</label>
+    <input class="oneinput" 
+    placeholder="Enter the weight " 
+    type="number" value="0"
+     max="500" min="0"/>
+</div>
+  </div>
+</body> 
+</html>
