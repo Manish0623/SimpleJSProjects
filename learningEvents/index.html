@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div>
+    <h1>INLINE EVENT</h1>
+    <div style="flex: flex-row;">
+  <button onclick="alert('welcome to the classes')"> Greeting </button>
+      <button onmouseover="alert('what the hell ')"> Greeting AGAIN</button>
+    </div>
+  
+   </div>
+
+
+
+    <div>
+    <h1>addEventListner</h1>
+    <div style="flex: flex-row;">
+  <button onclick="alert('welcome to the classes')"> Greeting </button>
+      <button > Greeting AGAIN</button>
+    </div>
+  
+   </div>
+
+  <div>
+    <h1>Dom Event Handler</h1>
+    <div style="flex: flex-row;">
+  <button id="button1" > Greeting </button>
+      <button id="button2"> Greeting AGAIN</button>
+    </div>
+  
+   </div>
+   <script >
+    document.getElementById('button1').onclick=()=>{
+        alert('go to your home..');
+    }
+
+    document.getElementById('button2').addEventListener('click',()=>{
+        document.body.style.backgroundColor = "green";
+    })
+   </script>
+</body>
+</html>
