@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+  <link href="/src/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div  class=" flex justify-center items-center">
+  <div class="flex flex-col h-[400px] w-[400px]
+   bg-amber-300 rounded border-3 border-blue-950
+     
+    justify-center items-center  ">
+
+<input id="first" class="w-[300px] h-[50px] rounded
+ border-blue-900 border-2 text-center"
+  type="text" placeholder="1st number" autocomplete="off"><br>
+
+<input id="second" class="w-[300px] h-[50px] 
+rounded border-blue-900 border-2 text-center"
+ type="text" placeholder="2nd number" autocomplete="off"><br>
+
+
+<label class="  text-blue-950 
+   font-bold  text-xl"> Choose one of the operator:</label><br>
+
+<select id="operator" class="w-fit cursor-pointer h-[30px] 
+rounded bg-blue-950 text-center  text-yellow-400">
+    <option>Addition</option>
+    <option>Subtract</option>
+    <option>Multiplication</option>
+    <option>Division</option>
+</select><br>
+
+<button id="btn" class="bg-blue-950 text-yellow-300
+ border-2 h-[40px] w-[150px] rounded
+  hover:bg-yellow-300 hover:text-blue-900
+   hover:border-2 font-bold hover:border-blue-950 ">calculate the sum</button>
+
+  <div>
+    Result: <span id="result">0</span>
+  </div>
+  </div>
+</div>
+
+    <script src="./script.js"></script>
+
+
+
+
+
+    
+</body>
+</html>
