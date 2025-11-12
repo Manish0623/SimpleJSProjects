@@ -1,0 +1,29 @@
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class bruteForce {
+    public static void main(String[] args) {
+        String[] str = {"amazon", "ECR", "amazon", "azure", "azure"};
+
+        System.out.println("Duplicate strings using brute force:");
+        for (int i = 0; i < str.length; i++) {
+            for (int j = i + 1; j < str.length; j++) {
+                if (str[i].equals(str[j])) {
+                    System.out.println(str[i]);
+                }
+            }
+        }
+
+        System.out.println("************* Using HashSet **************");
+
+        // Using HashSet to find duplicates
+        Set<String> data = new HashSet<String>();
+        for (String e : str) {
+            if (!data.add(e)) {  
+                System.out.println(e);
+            }
+        }
+
+
+    }}
