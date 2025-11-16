@@ -1,0 +1,18 @@
+
+
+public class findIndex{
+    public static int Index(int arr[] , int target){
+        for ( int i=0;i<arr.length ; i++){
+            if(arr[i] == target){
+                return i;
+            }
+        }
+        return -1;
+    }
+    public static void main(String[] args) {
+        int arr[] = {20,30,1,40,50};
+        int target = 1;
+
+        int index = Index(arr, target);
+        System.out.println(index);
+    }}
